@@ -1,0 +1,68 @@
+# ---------------------------- Python ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+
+# ------------------------- Virtual envs -------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------- Notebooks / editors ---------------------
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ------------------------- Experiment tools ----------------------
+wandb/
+runs/
+lightning_logs/
+mlruns/
+
+# ---------------------------- Data ------------------------------
+# Datasets are large and often licensed - do not commit them.
+data/*.csv
+data/*.tsv
+data/*.zip
+data/*.json
+data/*.jsonl
+!data/README.md
+
+# --------------------- Models & checkpoints ---------------------
+# Trained weights are build artefacts, not source code.
+# Publish them with Git LFS or a release asset instead.
+models/**
+!models/.gitkeep
+!models/README.md
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# -------------------- Hugging Face cache ------------------------
+.cache/
+*.msgpack
+*.h5
+
+# ---------------------- Generated outputs -----------------------
+outputs/**
+!outputs/.gitkeep
+
+# --------------------------- Secrets ----------------------------
+.env
+.env.*
+*.key
+*.pem
+secrets.yaml
